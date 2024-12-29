@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+// import bloc
+import 'package:flutter_bloc/flutter_bloc.dart';
+// import dart:math
+import 'dart:math';
 
 void main() {
   runApp(const MyApp());
@@ -21,3 +25,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
