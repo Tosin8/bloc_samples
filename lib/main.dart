@@ -38,9 +38,22 @@ const names = [
 extension RandomElement<T> on Iterable<T> {
   T getRandomElement() => elementAt(math.Random().nextInt(length));
 }
-class HomePage extends StatelessWidget {
+
+class NamesCubit extends  Cubit<String?> {
+  NamesCubit() : super(null); 
+  
+  void generateRandomName() {
+    emit(names.getRandomElement());
+  }
+}
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
