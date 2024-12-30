@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // import bloc
 import 'package:bloc/bloc.dart';
 // import dart:math
-import 'dart:math';
+import 'dart:math' as math show Random;
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +27,13 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+// Defining list of names. 
+const names = [
+  'Foo', 
+  'Bar', 
+  'Baz',
+]; 
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
