@@ -35,6 +35,9 @@ const names = [
   'Baz',
 ]; 
 
+extension RandomElement<T> on Iterable<T> {
+  T getRandomElement() => elementAt(math.Random().nextInt(length));
+}
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
