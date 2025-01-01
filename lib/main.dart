@@ -54,6 +54,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+late final NamesCubit cubit; 
+
+@override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    cubit = NamesCubit();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
