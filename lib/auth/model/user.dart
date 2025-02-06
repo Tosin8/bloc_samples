@@ -10,3 +10,5 @@ class User extends Equatable {
 
   static const empty = User('-');
 }
+
+
